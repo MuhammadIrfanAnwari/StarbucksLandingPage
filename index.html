@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page Starbucks</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="bulat"></div>
+		<nav>
+			<div ><a href="#" title=""><img src="img/logo.png" alt="logo" class="logo"></a></div>
+			<ul>
+				<li><a href="#" title="Home">Home</a></li>
+				<li><a href="#" title="Home">Menu</a></li>
+				<li><a href="#" title="Home">What's New</a></li>
+				<li><a href="#" title="Home">Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<div class="textBox">
+				<h2>It's not just coffee<br> it's <span>Starbucks</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				<a href="#" title="">Cari Tau</a>
+			</div>
+			<div class="imgBox">
+				<img src="img/img1.png" alt="Starbucks" class="starbucks">
+			</div>
+		</div>
+
+		<ul class="thumb">
+			<li><img src="img/thumb1.png" alt="thumbnail 1" onclick="imgSlider('img/img1.png'); gantiWarna('green')"></li>
+			<li><img src="img/thumb2.png" alt="thumbnail 2" onclick="imgSlider('img/img2.png'); gantiWarna('#eb7495')"></li>
+			<li><img src="img/thumb3.png" alt="thumbnail 3" onclick="imgSlider('img/img3.png'); gantiWarna('#d752b1')"></li>
+		</ul>
+
+		<ul class="sos">
+			<li><a href="#"><img src="img/facebook.png"></a></li>
+			<li><a href="#"><img src="img/instagram.png"></a></li>
+			<li><a href="#"><img src="img/twitter.png"></a></li>
+		</ul>
+	</section>
+
+	<script>
+		function imgSlider(apapun){
+			document.querySelector('.starbucks').src = apapun;
+		}
+
+		function gantiWarna(warna){
+			const bulat = document.querySelector('.bulat');
+			bulat.style.background = warna;
+		}
+	</script>
+</body>
+</html>
